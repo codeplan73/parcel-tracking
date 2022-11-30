@@ -4,7 +4,10 @@
   "description": "parcel tracking system",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "server":"nodemon app.js",
+    "client":"npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "emmanuel omonzebaguan",
   "license": "MIT",
